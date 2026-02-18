@@ -38,3 +38,20 @@ Various Heading Tags: Use for the priority of the content
 <h6> Lowest weightage Tags
 
 </body>
+
+
+Formatting Tags:
+
+<B> - Makes text bold
+<Strong> - Makes text bold with semantic importance
+<i> - Makes text italic
+<Em> - Makes text italic with emphasis (semantic)
+<U> - Underlines text
+<del> - Shows deleted/strikethrough text
+<br> - Line break (single tag, no closing tag)
+<Sup> - Superscript text (raised above baseline)
+<Sub> - Subscript text (lowered below baseline)
+<Span> - Generic container/holder for inline content (lightweight inline wrapper)
+<div> - Generic block-level container for grouping content
+<cr> - Invalid tag (did you mean <br> for line break?)
+<R> - register under Government
