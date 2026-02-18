@@ -1,0 +1,40 @@
+
+HTML (Hyper Text Markup Language)
+It defines the structure of content
+It is the skeleton of a website.
+
+
+<a> - Opening Tags
+</a> - Closing Tags
+<> </> - Content(goint to print)
+
+
+
+<!DOCTYPE html> → Tells browser this is HTML5
+<html> → Root of the page
+<head> → Page info (not visible)
+<title> → Browser tab name
+<body> → Visible content
+
+<head>
+Head (5 Tags)
+1.Title - Title of the webpage
+2.Meta - Informationn of file(Describe the data, use SEO)
+3.Link - use the link to overlap on the webpage
+4.Style - 
+5.Script - 
+
+</head>
+
+
+Body Tags: Visible Content
+Under the body tags will print in the webpage:
+
+<body>
+Various Heading Tags: Use for the priority of the content
+
+<h1>Main Heading</h1> Top weightage
+<h2>Subheading</h2>
+<h6> Lowest weightage Tags
+
+</body>
