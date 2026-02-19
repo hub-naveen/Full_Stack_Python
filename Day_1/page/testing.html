@@ -3,10 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testing Page</title>
+    <title>Software Quality Assurance</title>
+    <style>
+        :root { --primary: #2c3e50; --secondary: #3498db; --bg: #f4f4f9; --text: #333; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; padding: 0; background: var(--bg); color: var(--text); }
+        header { background: var(--primary); color: white; padding: 2rem 1rem; text-align: center; }
+        nav { background: #34495e; padding: 0.8rem; text-align: center; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: 500; }
+        nav a:hover { color: var(--secondary); }
+        main { max-width: 800px; margin: 30px auto; padding: 30px; background: white; border-radius: 8px; box-shadow: 0 2px 15px rgba(0,0,0,0.1); }
+        h1, h2, h3 { color: var(--primary); }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+        footer { text-align: center; padding: 20px; background: var(--primary); color: white; margin-top: 40px; }
+        .back-btn { display: inline-block; margin-top: 20px; color: var(--secondary); text-decoration: none; font-weight: bold; }
+    </style>
 </head>
 <body>
-    <h1>Testing Page</h1>
-    <p>This is a simple testing page created as part of the Full Stack Python learning course. It serves as a basic HTML template for practicing web development concepts.</p>
+    <header>
+        <h1>Software Testing & QA</h1>
+    </header>
+
+    <nav>
+        <a href="../../main.html">Portal Home</a>
+        <a href="home.html">Day 1 Home</a>
+        <a href="devops.html">DevOps</a>
+        <a href="cloud.html">Cloud</a>
+    </nav>
+
+    <main>
+        <h2>Ensuring Quality and Reliability</h2>
+        <p>Software testing is the process of verifying that a system works according to its requirements. It is a critical part of the developer workflow to ensure stability and user satisfaction.</p>
+        
+        <h3>Levels of Testing</h3>
+        <ul>
+            <li><strong>Unit Testing:</strong> Testing individual functions or components in isolation.</li>
+            <li><strong>Integration Testing:</strong> Verifying that multiple components work together as expected.</li>
+            <li><strong>End-to-End (E2E) Testing:</strong> Testing the entire user flow from start to finish.</li>
+            <li><strong>Automated Testing:</strong> Using scripts to run tests frequently and find bugs early.</li>
+        </ul>
+
+        <a href="home.html" class="back-btn">← Back to Chapter List</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Developer Learning Hub. All rights reserved.</p>
+    </footer>
 </body>
 </html>

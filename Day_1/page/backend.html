@@ -2,17 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Backend Development</title>
+    <style>
+        :root { --primary: #2c3e50; --secondary: #3498db; --bg: #f4f4f9; --text: #333; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; padding: 0; background: var(--bg); color: var(--text); }
+        header { background: var(--primary); color: white; padding: 2rem 1rem; text-align: center; }
+        nav { background: #34495e; padding: 0.8rem; text-align: center; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: 500; }
+        nav a:hover { color: var(--secondary); }
+        main { max-width: 800px; margin: 30px auto; padding: 30px; background: white; border-radius: 8px; box-shadow: 0 2px 15px rgba(0,0,0,0.1); }
+        h1, h2, h3 { color: var(--primary); }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+        footer { text-align: center; padding: 20px; background: var(--primary); color: white; margin-top: 40px; }
+        .back-btn { display: inline-block; margin-top: 20px; color: var(--secondary); text-decoration: none; font-weight: bold; }
+    </style>
 </head>
 <body>
-    <h1>Backend Development</h1>
-    <a href="../index.html">Back to Home</a>
-    <h2>The Engine Under the Hood</h2>
-    <p>Backend development focuses on databases, scripting, and the architecture of websites.</p>
-    <ul>
-        <li>Python</li>
-        <li>Node.js</li>
-        <li>SQL</li>
-    </ul>
+    <header>
+        <h1>Backend Development</h1>
+    </header>
+
+    <nav>
+        <a href="../../main.html">Portal Home</a>
+        <a href="home.html">Day 1 Home</a>
+        <a href="frontend.html">Frontend</a>
+        <a href="database.html">Databases</a>
+    </nav>
+
+    <main>
+        <h2>The Engine Under the Hood</h2>
+        <p>Backend development focuses on databases, scripting, and the architecture of websites. It is the invisible backbone that powers the user journey.</p>
+        
+        <h3>Core Skills & Tools</h3>
+        <ul>
+            <li><strong>Python:</strong> A versatile language used for web apps, automation, and data.</li>
+            <li><strong>Node.js:</strong> JavaScript on the server, enabling high-performance real-time apps.</li>
+            <li><strong>API Design:</strong> Creating the bridges between frontend and backend (REST, GraphQL).</li>
+            <li><strong>SQL & Data Logic:</strong> Managing how data is structured and retrieved.</li>
+        </ul>
+
+        <a href="home.html" class="back-btn">← Back to Chapter List</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Developer Learning Hub. All rights reserved.</p>
+    </footer>
 </body>
 </html>

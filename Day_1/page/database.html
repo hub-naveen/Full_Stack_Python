@@ -2,16 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Database Management</title>
+    <style>
+        :root { --primary: #2c3e50; --secondary: #3498db; --bg: #f4f4f9; --text: #333; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; padding: 0; background: var(--bg); color: var(--text); }
+        header { background: var(--primary); color: white; padding: 2rem 1rem; text-align: center; }
+        nav { background: #34495e; padding: 0.8rem; text-align: center; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: 500; }
+        nav a:hover { color: var(--secondary); }
+        main { max-width: 800px; margin: 30px auto; padding: 30px; background: white; border-radius: 8px; box-shadow: 0 2px 15px rgba(0,0,0,0.1); }
+        h1, h2, h3 { color: var(--primary); }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+        footer { text-align: center; padding: 20px; background: var(--primary); color: white; margin-top: 40px; }
+        .back-btn { display: inline-block; margin-top: 20px; color: var(--secondary); text-decoration: none; font-weight: bold; }
+    </style>
 </head>
 <body>
-    <h1>Database Management</h1>
-    <a href="../index.html">Back to Home</a>
-    <h2>Storing and Retrieving Data</h2>
-    <p>Databases are the foundation of any application that needs to persist data.</p>
-    <ul>
-        <li>Relational (SQL)</li>
-        <li>Non-Relational (NoSQL)</li>
-    </ul>
+    <header>
+        <h1>Database Management</h1>
+    </header>
+
+    <nav>
+        <a href="../../main.html">Portal Home</a>
+        <a href="home.html">Day 1 Home</a>
+        <a href="backend.html">Backend</a>
+        <a href="devops.html">DevOps</a>
+    </nav>
+
+    <main>
+        <h2>Storing and Retrieving Data</h2>
+        <p>Databases are the foundation of any application that needs to persist data. They are specialized systems for storing, managing, and retrieving information efficiently.</p>
+        
+        <h3>Types of Databases</h3>
+        <ul>
+            <li><strong>Relational (SQL):</strong> Structured data in tables (e.g., MySQL, PostgreSQL).</li>
+            <li><strong>Non-Relational (NoSQL):</strong> Flexible document or key-value stores (e.g., MongoDB, Redis).</li>
+            <li><strong>Graph Databases:</strong> Specialized for complex relationships (e.g., Neo4j).</li>
+        </ul>
+
+        <a href="home.html" class="back-btn">← Back to Chapter List</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Developer Learning Hub. All rights reserved.</p>
+    </footer>
 </body>
 </html>

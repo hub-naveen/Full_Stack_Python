@@ -3,9 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developers</title>
+    <title>Day 1: Curriculum Overview</title>
+    <style>
+        :root { --primary: #2c3e50; --secondary: #3498db; --bg: #f4f4f9; --text: #333; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; padding: 0; background: var(--bg); color: var(--text); }
+        header { background: var(--primary); color: white; padding: 3rem 1rem; text-align: center; }
+        .container { max-width: 900px; margin: 40px auto; padding: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .topic-card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 4px solid var(--secondary); transition: 0.3s; }
+        .topic-card:hover { transform: scale(1.02); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .topic-card h3 { margin-top: 0; color: var(--primary); }
+        .topic-card a { text-decoration: none; color: var(--secondary); font-weight: bold; }
+        footer { text-align: center; padding: 20px; background: var(--primary); color: white; margin-top: 40px; }
+        .btn-home { color: white; text-decoration: none; border: 1px solid white; padding: 8px 15px; border-radius: 4px; display: inline-block; margin-top: 15px; }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <h1>Full Stack Training: Day 1</h1>
+        <p>Your journey into professional software engineering starts here.</p>
+        <a href="../../main.html" class="btn-home">Return to Global Portal</a>
+    </header>
+
+    <div class="container">
+        <h2>Curriculum Topics</h2>
+        <div class="grid">
+            <div class="topic-card">
+                <h3>1. Introduction</h3>
+                <p>Understanding the software development lifecycle and industry standards.</p>
+                <a href="introduction.html">Study Chapter →</a>
+            </div>
+            <div class="topic-card">
+                <h3>2. Frontend</h3>
+                <p>Mastering HTML5, CSS3, and modern UI/UX principles.</p>
+                <a href="frontend.html">Study Chapter →</a>
+            </div>
+            <div class="topic-card">
+                <h3>3. Backend</h3>
+                <p>Diving into server-side logic, APIs, and scalable architecture.</p>
+                <a href="backend.html">Study Chapter →</a>
+            </div>
+            <div class="topic-card">
+                <h3>4. Database</h3>
+                <p>Relational vs Non-Relational data storage and management.</p>
+                <a href="database.html">Study Chapter →</a>
+            </div>
+            <div class="topic-card">
+                <h3>5. DevOps</h3>
+                <p>Automation, CI/CD pipelines, and infrastructure as code.</p>
+                <a href="devops.html">Study Chapter →</a>
+            </div>
+            <div class="topic-card">
+                <h3>6. Software Testing</h3>
+                <p>Quality assurance, unit testing, and automation frameworks.</p>
+                <a href="testing.html">Study Chapter →</a>
+            </div>
+             <div class="topic-card">
+                <h3>7. Cloud Computing</h3>
+                <p>Deploying at scale using AWS, Azure, and Google Cloud.</p>
+                <a href="cloud.html">Study Chapter →</a>
+            </div>
+             <div class="topic-card">
+                <h3>8. Cyber Security</h3>
+                <p>Securing applications and understanding threat landscapes.</p>
+                <a href="security.html">Study Chapter →</a>
+            </div>
+             <div class="topic-card">
+                <h3>9. AI & Machine Learning</h3>
+                <p>The future of development: Neural networks and data science.</p>
+                <a href="ai-ml.html">Study Chapter →</a>
+            </div>
+             <div class="topic-card">
+                <h3>10. Career Paths</h3>
+                <p>Mapping your future in the tech industry.</p>
+                <a href="career.html">Study Chapter →</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Developer Learning Hub. All rights reserved.</p>
+    </footer>
 </body>
 </html>
