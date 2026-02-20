@@ -1,0 +1,565 @@
+/* Reset and base styles - Element selector for global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling - Element selector with modern typography and color scheme */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #1f2937;
+  background-color: #f8fafc;
+  font-size: 16px; /* Base font size in px */
+}
+
+/* Header section - Class selector for main header */
+.header {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: white;
+  padding: 2rem 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.logo-section {
+  flex-shrink: 0;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  object-fit: cover;
+}
+
+.title-section h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.college-tagline {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+/* Navigation - ID selector for navigation list */
+#nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: #1e293b;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#nav-list li {
+  position: relative;
+}
+
+/* Navigation links - Descendant selector with pseudo-class for hover effects */
+#nav-list li a {
+  display: block;
+  padding: 1rem 2rem;
+  color: #e2e8f0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+#nav-list li a:hover {
+  background-color: #334155;
+  color: #f1f5f9;
+  transform: translateY(-2px);
+}
+
+#nav-list li a.active {
+  background-color: #3b82f6;
+  color: white;
+  font-weight: 600;
+}
+
+/* Main content - Class selector for content area */
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+/* Hero section - Class selector for introductory sections */
+.hero-section {
+  text-align: center;
+  margin-bottom: 4rem;
+  padding: 2rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.hero-section h2 {
+  font-size: 2.5rem;
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  color: #64748b;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Section titles - Group selector for all headings */
+h1, h2, h3, h4 {
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2rem;
+  border-bottom: 3px solid #3b82f6;
+  padding-bottom: 0.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+h2::after { /* Pseudo-element for decorative line */
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #3b82f6, #06b6d4);
+}
+
+h3 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+  color: #2563eb;
+}
+
+/* Grid layouts - Class selectors for various grid sections */
+.content-grid, .services-grid, .value-grid, .contact-grid, .courses-grid, .overview-grid {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.content-grid {
+  grid-template-columns: 1fr 1fr;
+}
+
+.services-grid, .value-grid, .contact-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.courses-grid {
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.overview-grid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* Card styling - Class selector for card components */
+.mission-card, .vision-card, .service-item, .value-item, .contact-card, .course-card, .overview-item, .path-option {
+  background: white;
+  padding: 2rem;
+  color: #0f172a;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission-card:hover, .vision-card:hover, .service-item:hover, .value-item:hover, .contact-card:hover, .course-card:hover, .overview-item:hover, .path-option:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* Stats section - Class selector with special styling */
+.stats-section {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  padding: 3rem;
+  border-radius: 16px;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.stat-item {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1.1rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+/* Contact form styling - Class selectors for form elements */
+.inquiry-section {
+  background: white;
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  margin-bottom: 3rem;
+}
+
+.inquiry-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+  padding: 0.75rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+/* Course card specific styling - Class selectors with child selectors */
+.course-card {
+  border-left: 4px solid #3b82f6;
+}
+
+.course-card.featured {
+  border-left-color: #f59e0b;
+  position: relative;
+}
+
+.course-card.featured::before {
+  content: '⭐';
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+}
+
+.course-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.course-duration {
+  background: #dbeafe;
+  color: #1e40af;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.course-features {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.feature-tag {
+  background: #ecfdf5;
+  color: #065f46;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.course-outcomes {
+  list-style: none;
+  padding: 0;
+}
+
+.course-outcomes li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.course-outcomes li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #10b981;
+  font-weight: bold;
+}
+
+/* Map section - Class selector */
+.map-section {
+  margin-bottom: 3rem;
+}
+
+.map-container {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* CTA section - Class selector for call-to-action */
+.cta-section {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  color: white;
+  padding: 3rem;
+  border-radius: 16px;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.cta-content h3 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.cta-content p {
+  color: #cbd5e1;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-button {
+  display: inline-block;
+  background: #3b82f6;
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+/* Footer - Class selector with modern styling */
+.footer {
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 2rem 0;
+  margin-top: 4rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.footer-contact {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.footer-item {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.footer-separator {
+  color: #64748b;
+}
+
+.footer-copyright {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Responsive design - Media queries with percentage and vh units */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .title-section h1 {
+    font-size: 2rem;
+  }
+
+  #nav-list {
+    flex-direction: column;
+  }
+
+  #nav-list li a {
+    padding: 1rem;
+  }
+
+  .content-grid, .services-grid, .value-grid, .contact-grid, .courses-grid, .overview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-section h2 {
+    font-size: 2rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .course-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .inquiry-section {
+    padding: 2rem 1rem;
+  }
+
+  .cta-section {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .header {
+    padding: 1.5rem 0;
+  }
+
+  .title-section h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .hero-section, .inquiry-section, .stats-section, .cta-section {
+    padding: 1.5rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-item {
+    display: block;
+    margin: 0.5rem 0;
+  }
+}
+
+/* Attribute selector for external links (if any) */
+a[href^="http"] {
+  position: relative;
+}
+
+a[href^="http"]::after {
+  content: '↗';
+  font-size: 0.8em;
+  margin-left: 4px;
+  opacity: 0.7;
+}
+
+/* Child selector for direct children of navigation */
+.navbar > ul > li:first-child {
+  border-radius: 0 0 0 8px;
+}
+
+.navbar > ul > li:last-child {
+  border-radius: 0 0 8px 0;
+}
+
+/* Additional hover effects for interactive elements */
+.contact-details p:hover {
+  color: #2563eb;
+}
+
+.cert-badge {
+  background: #dbeafe;
+  color: #1e40af;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  display: inline-block;
+  margin: 0.5rem;
+}</content>
+<parameter name="filePath">d:\Navi\VS Code\Full_Stack_Python\Day_2\website\style.css

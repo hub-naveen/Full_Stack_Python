@@ -120,3 +120,18 @@ border:1px solid black;
 
 
 
+CCSS Styling : CSS Units
+
+1. ABsolute Units:
+-Fixed size, doesnot change based on screen or userr sseettting
+-px; pixel (16px)
+-pt: point  (12pt)
+
+
+2. Relative Units:
+- Scale based on other mesurements like parent font size or viewport size.
+- em: relative to parent size (font size:1.5em)
+- rem relative to root HTML fohnt size (margin: 2em)
+
+
+Different types of CSS properties:
