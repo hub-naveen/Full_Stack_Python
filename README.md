@@ -81,7 +81,7 @@ Styled the college website with CSS, implementing:
 - Hover effects and interactive elements
 
 🔗 Live Demo:  
-https://hub-naveen.github.io/Full_Stack_Python/Day_3/website/index.html
+https://hub-naveen.github.io/Full_Stack_Python/Day_3/task/website/index.html
 
 ---
 
