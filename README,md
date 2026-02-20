@@ -52,7 +52,7 @@ Implemented ordered and unordered lists.
 https://hub-naveen.github.io/Full_Stack_Python/Day_2/task/order.html
 ---
 
-#### ✅ Task 6: College Website (DMICE)  
+#### ✅ Task 6: College Website (TechSolutions Institute)  
 Built a multi-page college website using semantic HTML structure.
 
 🔗 Live Demo:  
@@ -71,6 +71,17 @@ Learned and implemented:
 
 🔗 Live Demo:  
 https://hub-naveen.github.io/Full_Stack_Python/Day_3/task/css.html
+
+
+#### ✅ Task 8: College Website with CSS
+Styled the college website with CSS, implementing:
+- External stylesheets for maintainability
+- Color schemes and typography
+- Layout styling with margins and padding
+- Hover effects and interactive elements
+
+🔗 Live Demo:  
+https://hub-naveen.github.io/Full_Stack_Python/Day_3/website/index.html
 
 ---
 
