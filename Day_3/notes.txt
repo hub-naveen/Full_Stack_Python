@@ -1,0 +1,122 @@
+------------------------------------
+
+CSS : Cascading Style Sheets
+- It defines the styling and layout of HTML elements
+- It is responsible for colors, fonts, spacing, and visual presentation
+- CSS makes the webpage visually appealing
+
+
+Syntax :
+selector {
+    property: value;
+}
+
+Example:
+h1 {
+    color: blue;
+    font-size: 30px;
+}
+
+
+Types:
+
+1. Inline CSS - Styles applied directly to HTML elements using the style attribute
+   Example: <p style="color: red;">Text</p>
+   Pros: Quick for small changes
+   Cons: Hard to maintain, not reusable
+
+Example:
+   <h1 style="color:red;">Hello</h1>
+
+2. Internal CSS - Styles defined within <style> tags in the <head> section
+   Example: <style> p { color: red; } </style>
+   Pros: Keeps styles with HTML document
+   Cons: Only applies to that single page
+
+Example:
+   <head>
+  <style>
+    h1 {
+        color: green;
+    }
+  </style>
+</head>
+
+3. External CSS - Styles written in a separate .css file and linked to HTML
+   Example: <link rel="stylesheet" href="styles.css">
+   Pros: Reusable, easy to maintain, best practice
+   Cons: Requires separate file 
+
+Example:
+   <link rel="stylesheet" href="style.css">
+
+
+   ------------------------------------------------------------------------------------------------
+   different typees of selector
+   ------------------------------------------------------------------------------------------------
+Selector : A selector targets HTML elements
+
+Example:
+h1{ color: blue;}
+
+
+
+Element Selector:
+p{
+    color:red;
+    }
+
+ID Selector(#)
+
+#title{
+    color:vilot;
+}
+
+
+Class Selector:(.XX)
+
+.highlight {
+  color: green;
+}
+<p class="highlight">Text</p>
+
+Universal Selector (*)
+
+* {
+  margin: 0;
+}
+
+Group Selector:
+
+h1, h2, p {
+  color: purple;
+}
+
+Descendant Selector (SPACE)
+div p {
+  color: red;
+}
+
+   ------------------------------------------------------------------------------------------------
+
+   Commmon CSS property:
+   ------------------------------------------------------------------------------------------------
+
+Text Colour:
+    color: red;
+
+Background Color:
+background=colour: lightblue;
+
+
+Font Size:
+font-size: 20px;
+
+Center Text:
+text-align: center;
+
+Border:
+border:1px solid black;
+
+
+
