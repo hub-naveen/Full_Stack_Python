@@ -1,0 +1,15 @@
+print
+variable
+data types
+operators
+conditions statements / Loops
+functions
+advanced datatypes(primitive, Non primptive) - LIST, TUPLE< DICT
+OOPS (object, Class,inheritance, encpuslation)
+Error Handling
+File Handling - advanced level entry
+Modules -  advanced level
+packages
+library
+framework - advanced end
+
